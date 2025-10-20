@@ -74,3 +74,16 @@ Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction
 Sedgewick, R., & Wayne, K. (2011). Algorithms, 4th Edition.
 
 Grokking Algorithms — Aditya Bhargava (2016)
+
+🧭 Conclusion
+
+Both Prim’s and Kruskal’s algorithms successfully found the same Minimum Spanning Tree (MST) cost for all datasets.
+The experimental results confirm theoretical expectations:
+
+Prim’s algorithm performs better on dense graphs because it efficiently handles many edges using a priority queue.
+
+Kruskal’s algorithm performs better on sparse graphs, as it sorts edges and uses simple union-find operations.
+
+Both algorithms produce identical MST total costs, confirming correctness.
+
+In practical applications (like city road planning), Prim’s algorithm is often preferred for connected, dense networks, while Kruskal’s is simpler to implement for smaller or sparse networks.
